@@ -19,7 +19,7 @@ pnpm deploy
 The production site is configured for:
 
 ```text
-https://wynn.229866007.workers.dev
+https://wynn.myblog-site.workers.dev
 ```
 
 Deployment is handled by Cloudflare Workers Git integration. Connect the
