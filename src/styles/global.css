@@ -148,8 +148,17 @@ input {
   flex-wrap: wrap;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  min-width: max-content;
+}
+
 .nav-links a,
 .pixel-button,
+.external-link-button,
 .theme-toggle {
   border: 2px solid var(--border);
   background: var(--surface);
@@ -168,11 +177,23 @@ input {
 .nav-links a[aria-current="page"],
 .nav-links a:hover,
 .pixel-button:hover,
+.external-link-button:hover,
 .theme-toggle:hover {
   color: var(--text);
   background: var(--surface-strong);
   transform: translate(-1px, -1px);
   box-shadow: 4px 4px 0 var(--border);
+}
+
+.external-link-button {
+  display: inline-grid;
+  place-items: center;
+  min-width: 78px;
+  height: 42px;
+  padding: 0 0.75rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 800;
 }
 
 .theme-toggle {
@@ -547,6 +568,10 @@ main {
     justify-content: flex-start;
   }
 
+  .nav-actions {
+    align-self: start;
+  }
+
   .hero,
   .grid-2,
   .grid-3 {
@@ -564,6 +589,12 @@ main {
   }
 
   .nav-links a {
+    font-size: 0.72rem;
+  }
+
+  .external-link-button {
+    min-width: 70px;
+    padding: 0 0.55rem;
     font-size: 0.72rem;
   }
 

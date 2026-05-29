@@ -2,6 +2,7 @@ export const SITE_TITLE = "Wynn's Save Point";
 export const SITE_DESCRIPTION =
   'Saving progress in code, ideas, and little experiments.';
 export const SITE_URL = 'https://wynn.229866007.workers.dev';
+export const githubProfileUrl = 'https://github.com/Yumiue';
 
 export const navItems = [
   { href: '/', label: 'Home' },
